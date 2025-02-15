@@ -1,0 +1,102 @@
+body{
+    background-color: #0F0F0F;
+}
+
+main{
+    padding: 50px 100px;
+    min-height: 100vh; /* Sørger for, at main fylder hele viewport-højden */
+}
+
+.tekst-billede-1sect{
+    display: flex;
+    width: 100%;
+    gap: 60px;
+}
+
+.intro-tekst{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.intro-tekst h1{
+    color:#F8F5EF;
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.intro-tekst p{
+    color: #F8F5EF;
+    font-family: "Sen", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.7;
+    font-size:24px;
+}
+
+#intro-billede{
+    width: 45%;
+}
+
+.tekst-billede-2sect{
+    display: flex;
+    justify-content: center;
+}
+
+.styrker-tekst h1{
+    color:#F8F5EF;
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 128px;
+    margin-bottom: 0px;
+}
+
+.styrker-tekst ol {
+    list-style: none;
+    counter-reset: list-counter;
+    padding: 0;
+}
+
+.styrker-tekst li {
+    counter-increment: list-counter;
+    display: flex;
+    align-items: center;
+    color: #F8F5EF;
+    font-family: "Sen", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size:24px;
+}
+
+.styrker-tekst li:last-child {
+    border-bottom: none;
+}
+
+.styrker-tekst li::before {
+    content: counter(list-counter) ".";
+    /*color: #0073e6;*/
+    margin-right: 10px;
+    min-width: 25px;
+    text-align: right;
+    color:#F8F5EF;
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 69px;
+}
+
+.styrker-tekst strong {
+    color: #F8F5EF;
+    font-family: "Sen", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size:24px;
+}

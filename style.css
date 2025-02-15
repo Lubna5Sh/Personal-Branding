@@ -1,8 +1,8 @@
 /*HEADER*/
 header {
-    background-color: #0F0F0F; /* Match baggrundsfarve fra dit design */
+    background-color: transparent; /* Match baggrundsfarve fra dit design */
     padding: 10px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Let skygge */
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Let skygge */
 }
 
 /* Navigation styling */
@@ -11,7 +11,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1300px;
+    /*max-width: 1300px;*/
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -42,6 +42,11 @@ header {
     font-weight: 700;
 }
 
+nav a.active {
+    color: #DEFF67; /* Grøn farve som i dit billede */
+    font-weight: 700;
+}
+
 /* Logo styling */
 .logo img {
     max-height: 130px; /* Juster logoets størrelse */
@@ -50,6 +55,9 @@ header {
 
 /* Hamburger Menu Styles */
 .ham-menu {
+    background-color: #FF95CD;
+    padding: 10px;
+    border-radius: 30px;
     height: 40px; 
     width: 40px; 
     margin-left: 20px; /* Margin til at skubbe det til venstre */
@@ -119,7 +127,7 @@ header {
 
 .off-screen-menu a {
     text-decoration: none; /* Fjern understregning */
-    color: #0F0F0F; /* Match tekstfarve */
+    color: #F8F5EF; /* Match tekstfarve */
     font-family: "Sen", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -163,3 +171,4 @@ header {
         right: 0; /* Slide in when active */
     }
 }
+

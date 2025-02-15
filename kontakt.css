@@ -1,0 +1,74 @@
+body{
+    background-color: #0F0F0F;
+}
+
+main{
+    padding: 50px 100px;
+    min-height: 100vh; /* Sørger for, at main fylder hele viewport-højden */
+}
+
+.tekst-billede-sect{
+    display: flex;
+    width: 100%;
+    gap: 60px;
+}
+
+.kontaktinfo-tekst{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.kontaktinfo-tekst h1{
+    font-family: "La Belle Aurore", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#FC4AAF;
+    font-size: 96px;
+} 
+
+.kontaktinfo-tekst h2{
+    color:#F8F5EF;
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.kontaktinfo-tekst p{
+    color: #F8F5EF;
+    font-family: "Sen", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.7;
+    font-size:24px;
+}
+
+.social-ikoner{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.social-ikoner img{
+    width: 80px;
+    height: 80px;
+}
+
+.social-ikoner img:hover{
+    transform: scale(1.3);
+}
+
+#mail{
+    width: 40%;
+    text-decoration: underline;
+}
+
+#mail:hover{
+    color: #DEFF67;
+    font-weight: bold;
+}
+

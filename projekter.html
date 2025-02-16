@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
+    <script src="projekter.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="projekter.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -102,11 +103,85 @@
                     </video>
                 </div>
             </div>
-            <div class="cta-sec1">
+            <div class="cta-sec3">
+                   <!-- Image Group -->
+                <div class="image-group">
+                    <img src="images/moodboard-lu-nippon.png" alt="Image 1" onclick="openModal(0)">
+                    <img src="images/logogforslag-ikoner.png" alt="Image 2" onclick="openModal(1)">
+                    <img src="images/minesider-designmanual2.png" alt="Image 3" onclick="openModal(2)">
+                    <img src="images/vpc-nippon.png" alt="Image 3" onclick="openModal(3)">
+                </div>
+
+                <!-- Modal -->
+                <div id="myModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <button class="nav-btn prev" onclick="changeImage(-1)">&#10094;</button>
+                    <img id="modalImg" class="modal-content">
+                    <button class="nav-btn next" onclick="changeImage(1)">&#10095;</button>
+                </div>
                 <a href="pdfs/Rapport - Nippon UX UI projekt.pdf" target="_blank" class="cta-button">Se processen</a>
+            </div>
+        </section>
+
+        <section class="projekt4-sec"> 
+            <div class="projekt4-tekst-vid">            
+                <div class="projekt4-tekst">
+                    <h1>Interaktiv storytelling - "Steno Museet"</h1>
+                    <p>Endnu et gruppeprojekt denne gang med 3 personer. Projektet handlede om at skabe en digital og interaktiv løsning for en af udstillingerne på Steno Museet I Aarhus. Min gruppe valgte at lave en interaktiv løsning for udstillingen "Kære krop, svære krop". Løsningen havde vi designet til at blive vist på en berøringsskærm I museet.</p>
+                    <p>Min rolle:
+                        Jeg stod for at udarbejde storyboardet til løsning. Vi lavede hver vores moodborad, og mit blev valgt som grundlag for det videre arbjede. Derudover arbejdede jeg med styletile og wireframes, særligt med forsiden og tidslinjen for skønhedsidealers udvikling, samt opbygning af dem I HTML, CSS og JavaScript.</p>
+                </div>
+                <div class="video2-container">
+                    <video autoplay muted loop class="video2">
+                        <source src="videos/recording13.mp4" type="video/mp4">
+                        Din browser understøtter ikke videoformatet.
+                    </video>
+                </div>
+            </div>
+            <div class="cta-sec3">
+                   <!-- Image Group -->
+                <div class="image-group">
+                    <img src="images/mood-interaktiv-lubna.png" alt="Image 1" onclick="openModal(0)">
+                    <img src="images/tidslinje.png" alt="Image 2" onclick="openModal(1)">
+                    <img src="images/storyboard.png" alt="Image 3" onclick="openModal(2)">
+                    <img src="images/styletil-interaktiv.png" alt="Image 3" onclick="openModal(3)">
+                </div>
+
+                <!-- Modal -->
+                <div id="myModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <button class="nav-btn prev" onclick="changeImage(-1)">&#10094;</button>
+                    <img id="modalImg" class="modal-content">
+                    <button class="nav-btn next" onclick="changeImage(1)">&#10095;</button>
+                </div>
+                <a href="pdfs/Interaktiv Storytelling.pdf" target="_blank" class="cta-button">Se processen</a>
             </div>
         </section>
     </main>
 
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.image-group img');
+
+        function openModal(index) {
+            currentIndex = index;
+            document.getElementById("myModal").style.display = "block";
+            document.getElementById("modalImg").src = images[currentIndex].src;
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        function changeImage(step) {
+            currentIndex += step;
+            if (currentIndex < 0) {
+                currentIndex = images.length - 1; // Wrap around to the last image
+            } else if (currentIndex >= images.length) {
+                currentIndex = 0; // Wrap around to the first image
+            }
+            document.getElementById("modalImg").src = images[currentIndex].src;
+        }
+    </script>
 </body>
 </html>

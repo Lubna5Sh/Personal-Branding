@@ -5,6 +5,20 @@ body{
 main{
     padding: 50px 100px;
     min-height: 100vh; /* Sørger for, at main fylder hele viewport-højden */
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+.spacer h1{
+    color:#F8F5EF;
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 128px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
 }
 
 .projekt4, .projekt2{
@@ -70,6 +84,11 @@ main{
     /*border-radius: 8px;*/
 }
 
+.cta-btns{
+    display: flex;
+    gap:40px;
+}
+
 .cta-sec{
     display: flex;
     flex-direction: row;
@@ -88,7 +107,7 @@ main{
 
 .cta-button{
     background-color: #FC4AAF;
-    border-radius: 14px;
+    border-radius: 8px;
     color: #F8F5EF;
     padding: 18px 28px;;
     text-align: center;
@@ -100,11 +119,18 @@ main{
     font-family: "Sen", serif;
     font-weight: 700;
     transition: transform 0.3s;
+    box-shadow: 7px 7px #F8F5EF;
 }
 
 .cta-button:hover{
     background-color: #FF95CD;
-    transform: scale(1.05);
+    /*transform: scale(1.05);*/
+}
+
+.cta-button:active {
+    background-color: #FF95CD;
+    box-shadow: 0 5px #DEFF67;
+    transform: translateY(4px);
 }
 
 .img-gallery{

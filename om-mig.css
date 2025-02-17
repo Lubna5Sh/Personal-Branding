@@ -119,7 +119,7 @@ main{
 
 .cta-button{
     background-color: #FC4AAF;
-    border-radius: 14px;
+    border-radius: 8px;
     color: #F8F5EF;
     padding: 18px 28px;;
     text-align: center;
@@ -130,11 +130,19 @@ main{
     cursor: pointer;
     font-family: "Sen", serif;
     font-weight: 700;
+    transition: transform 0.3s;
+    box-shadow: 7px 7px #F8F5EF;
 }
 
 .cta-button:hover{
     background-color: #FF95CD;
-    transform: scale(1.1);
+    /*transform: scale(1.05);*/
+}
+
+.cta-button:active {
+    background-color: #FF95CD;
+    box-shadow: 0 5px #DEFF67;
+    transform: translateY(4px);
 }
 
 #pil-ikon{

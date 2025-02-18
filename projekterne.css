@@ -162,7 +162,7 @@ main{
     width: 24.99999%;
 }*/
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 786px) {
 .responsive {
     width: 49.99999%;
     margin: 6px 0;
@@ -189,4 +189,41 @@ main{
     color:#F8F5EF;
     font-size: 30px;
     width: 100%;
+}
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 768px) {
+    main{
+        padding: 50px 70px;
+    }
+
+    .spacer h1{
+        font-size: 96px;
+    }
+
+    .projekt4, .projekt2{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .projekt3, .projekt1, .projekt5{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tekst-cta3, .tekst-cta4, .tekst-cta2, .tekst-cta1, .tekst-cta5{
+       width: 100%;
+    }
+    
+    .projekt3-tekst, .projekt4-tekst, .projekt2-tekst, .projekt1-tekst, .projekt5-tekst{
+        width: 100%;
+    }
+
+    .projekt3-tekst h1, .projekt4-tekst h1, .projekt2-tekst h1, .projekt1-tekst h1, .projekt5-tekst h1{
+        font-size: 90px;
+    }
+    
+    .vid-img{
+        width: 100%;
+    }
 }

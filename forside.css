@@ -87,4 +87,29 @@ main{
     }
 }
 
+/* Media query for mobile screens */
+@media only screen and (max-width: 768px) {
+    main{
+        padding: 50px 70px;
+    }
+    
+    .overskrift{
+        font-size: 100px;
+    }
+
+    .portrait img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top:190px;
+    }
+
+    .marquee-text {
+        font-size: 35px;
+    }
+    
+    .marquee-container strong{
+        font-size: 76px;
+    }
+}
 

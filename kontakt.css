@@ -73,3 +73,39 @@ main{
     font-weight: bold;
 }
 
+/* Media query for mobile screens */
+@media only screen and (max-width: 768px) {
+    main{
+        padding: 50px 70px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tekst-billede-sect{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .kontaktinfo-tekst{
+        width: 100%;
+    }
+    
+    .kontaktinfo-tekst h1{
+        font-family: "La Belle Aurore", serif;
+        font-weight: 400;
+        font-style: normal;
+        color:#FC4AAF;
+        font-size: 76px;
+    } 
+    
+    .kontaktinfo-tekst h2{
+        font-size: 90px;
+    }
+
+    .social-ikoner img{
+        width: 60px;
+        height: 60px;
+    }
+    
+}

@@ -56,8 +56,8 @@ nav a.active {
 /* Hamburger Menu Styles */
 .ham-menu {
     background-color: #FF95CD;
-    padding: 10px;
-    border-radius: 30px;
+    padding: 15px;
+    border-radius: 50%;
     height: 40px; 
     width: 40px; 
     margin-left: 20px; /* Margin til at skubbe det til venstre */

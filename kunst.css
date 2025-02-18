@@ -169,3 +169,63 @@ main{
     display: none;
 }
 
+/* Media query for mobile screens */
+@media only screen and (max-width: 768px) {
+    main{
+        padding: 50px 70px;
+        gap: 60px;
+    }
+
+    .tekst-1{
+        text-align: center; 
+        width: 90%;
+    }
+    
+    .spacer h1{
+        font-size: 100px;
+    }
+
+    .firstsection{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .tekst-2, .tekst-3{
+        width:100%;
+    }
+    
+    .tekst-3{
+        padding-left: 0px;
+    }
+    
+    .tekst-2 h1{
+        font-size: 90px;
+    }
+
+    .secondsection{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .tekst-3 h1{
+        font-size: 90px; 
+    }
+    
+    .spacer h1{
+        font-size: 100px;
+    }
+
+    .image-slider {
+        width: 100%;
+    }
+
+    .slider {
+        display: flex;
+        aspect-ratio:7/9; /*8/10 /*16/9*/
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        /*box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+        border-radius: 0rem;*/
+    }
+}

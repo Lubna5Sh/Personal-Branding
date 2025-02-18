@@ -198,6 +198,7 @@ footer{
 .social-ikoner img{
     width: 40px;
     height: 40px;
+    transition: transform 0.3s;
 }
 
 .social-ikoner img:hover{

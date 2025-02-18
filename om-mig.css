@@ -215,3 +215,91 @@ main{
 #fakta-billede{
     width: 45%;
 }
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 768px) {
+    main{
+        padding: 50px 70px;
+        min-height: 100vh; /* Sørger for, at main fylder hele viewport-højden */
+        display: flex;
+        flex-direction: column;
+        gap:50px;
+    }
+    
+
+    .tekst-billede-1sect, .tekst-billede-3sect{
+        display: block;
+        gap: 40px;
+    }
+    
+    .intro-tekst, .fakta-tekst{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .intro-tekst h1, .styrker-tekst h1, .tools-sec h1,.fakta-tekst h1{
+        font-size: 90px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .intro-tekst p{
+        line-height: 1.7;
+    }
+    
+    #intro-billede{
+        width: 100%;
+    }
+
+    .styrker-tekst li {
+        counter-increment: list-counter;
+        display: flex;
+        line-height: 1.7;
+    }
+
+    .cta-sec{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap:20px;
+    }
+    
+    .cta-sec p{
+        font-size: 35px;
+        width: 90%;
+        text-align: center;
+    }
+    
+    #pil-ikon{
+        width:40%;
+        rotate: 90deg;
+        padding-bottom: 100px;
+        padding-top: 10px;
+    }
+
+    .tools-sec{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tools-sec p{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .fakta-tekst li{
+        line-height: 1.7;
+    }
+    
+    #fakta-billede{
+        width: 100%;
+    }
+
+    /*#apps img{
+        background-image: url(images/iPhone\ 16\ -\ 1.png);
+    }*/
+    
+}

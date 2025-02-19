@@ -6,6 +6,7 @@
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="om-mig.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jomhuria&family=La+Belle+Aurore&family=Sen:wght@400..800&display=swap" rel="stylesheet">
@@ -50,18 +51,18 @@
         <section class="tekst-billede-1sect">            
             <img id="intro-billede" src="images/skyer.jpg" alt="Intro billede">
             <div class="intro-tekst">
-                <h1>Hvem er jeg?</h1>
-                <p>Fra tid til anden stiller jeg også mig selv det spørgsmål.</p>
-                <p>Mit navn er Lubna, og jeg er 25 år gammel. Jeg er født I Syrien, men mine rødder er palæstinensiske. I 2016 kom jeg til Danmark. Gennem disse år har jeg udviklet mig både personligt og fagligt, fået et bredere perspektiv på både verden og mig selv.
+                <h1 data-aos="fade-up" data-aos-delay="200">Hvem er jeg?</h1>
+                <p data-aos="fade-up" data-aos-delay="300">Fra tid til anden stiller jeg også mig selv det spørgsmål.</p>
+                <p data-aos="fade-up" data-aos-delay="300">Mit navn er Lubna, og jeg er 25 år gammel. Jeg er født I Syrien, men mine rødder er palæstinensiske. I 2016 kom jeg til Danmark. Gennem disse år har jeg udviklet mig både personligt og fagligt, fået et bredere perspektiv på både verden og mig selv.
                     Min passion for kreativtet havde jeg siden jeg var lille barn og den voksede med tiden.</p>
-                <p>Jeg har en stærk sans for detaljer og æstetik, hvor jeg elsker at skabe designs, der ikke kun ser godt ud, men også formidler en følelse eller en historie.</p>
+                <p data-aos="fade-up" data-aos-delay="200">Jeg har en stærk sans for detaljer og æstetik, hvor jeg elsker at skabe designs, der ikke kun ser godt ud, men også formidler en følelse eller en historie.</p>
             </div>
         </section>
 
         <section class="tekst-billede-2sect">            
             <div class="styrker-tekst">
-                <h1>Mine styrker & kendetegn</h1>
-                <ol>
+                <h1 data-aos="fade-left" data-aos-delay="200">Mine styrker & kendetegn</h1>
+                <ol data-aos="slide-left" data-aos-delay="300">
                     <li><strong>Kreativ & detaljeorienteret</strong> - Brænder for visuel kommunikation og storytelling.</li>
                     <li><strong>Struktureret & reflekterende</strong> - Balancerer det kunstneriske med det praktiske.</li>
                     <li><strong>Nysgerrig & analytisk</strong> - Elsker at lære nyt og udforske idéer.</li>
@@ -75,25 +76,25 @@
         </section>
 
         <section class="cta-sec">
-            <p>Tag et kig på mine projekter og kunst her</p>
-            <img id="pil-ikon" src="images/arrow.png" alt="pil">
-            <a href="projekterne.html" class="cta-button">Mine projekter</a>
-            <a href="kunst.html" class="cta-button">Mine kunst</a>
+            <p data-aos="fade-right" data-aos-delay="200">Tag et kig på mine projekter og kunst her</p>
+            <img id="pil-ikon" src="images/arrow.png" alt="pil" data-aos="slide-right" data-aos-delay="300">
+            <a href="projekterne.html" class="cta-button" data-aos="zoom" data-aos-delay="100">Mine projekter</a>
+            <a href="kunst.html" class="cta-button" data-aos="zoom" data-aos-delay="100">Mine kunst</a>
         </section>
 
         <section class="tools-sec">
-            <h1>Mine værktøjer</h1>
+            <h1 data-aos="fade-down" data-aos-delay="200">Mine værktøjer</h1>
             <picture>
                 <source srcset="images/mobilresp.png" media="(max-width: 768px)">
-                <img id="apps" src="images/frame3-tools.png" alt="Programmer">
+                <img id="apps" src="images/frame3-tools.png" alt="Programmer" data-aos="zoom" data-aos-delay="100">
             </picture>
-            <p>Jeg er også i gang med at lære flere Adobe programmer samt at fordybe mig endnu mere mere i dem, jeg allerede bruger!</p>
+            <p data-aos="fade-down" data-aos-delay="200">Jeg er også i gang med at lære flere Adobe programmer samt at fordybe mig endnu mere mere i dem, jeg allerede bruger!</p>
         </section>
 
         <section class="tekst-billede-3sect">            
             <div class="fakta-tekst">
-                <h1>Tilfældige fakta om mig</h1>
-                <ul>
+                <h1 data-aos="fade-up" data-aos-delay="200">Tilfældige fakta om mig</h1>
+                <ul data-aos="fade-right" data-aos-delay="300">
                     <li>Er te-afhænger, jeg ELSKER te! Hvis du vil inviterer mig på en drik, så skal det helt klart være te!</li>
                     <li>Natugle</li>
                     <li>Har engang opdraget en mariehøne</li>
@@ -109,11 +110,15 @@
 
     <footer>
         <p class="copyright">Copyright &copy; 2025 Lubna Al-Shihabi</p>
-        <div class="social-ikoner" data-aos="fade-up" data-aos-delay="200">
+        <div class="social-ikoner">
             <a href="#"><img src="images/linkedin.png" alt="Linkedin" title="https://www.flaticon.com/free-icons/linkedin"></a>
             <a href="#"><img src="images/instagram.png" alt="instagram" title="https://www.flaticon.com/free-icons/instagram-logo"></a>
             <a href="#"><img src="images/dribble.png" alt="Dribbbel" title="https://www.flaticon.com/free-icons/dribble"></a>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

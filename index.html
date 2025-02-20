@@ -47,11 +47,17 @@
     </header>
 
     <main>
-        <div class="overskrift"><h1>PORTFOLiE</h1></div>
-        <div class="underoverskrift"><h2 class="typing1">Multimedie</h2><h2 class="typing2">designer</h2></div>
-        <div class="portrait">       
-            <img src="images/beautyposter.png" alt="Portrait">
-        </div>
+       <!--<div class="overskrift"><h1>PORTFOLiE</h1></div>--> 
+    <!--<div class="underoverskrift"><h2 class="typing1">Multimedie</h2><h2 class="typing2">designer</h2></div>-->
+      <!--<div class="portrait">       
+            <img src="images/forside-img.png" alt="Portrait" class="desktop-forside-img">
+            <img src="images/forside-img-mobil.png" alt="Portrait" class="mobil-forside-img">
+        </div>-->  
+
+        <picture class="portrait">
+            <source srcset="images/forside-img-mobil.png" media="(max-width: 768px)">
+            <img id="apps" src="images/forside-img.png" alt="Programmer">
+        </picture>
  
     </main>        
     <div class="marquee-container">
@@ -60,7 +66,7 @@
 
     <footer>
         <p class="copyright">Copyright &copy; 2025 Lubna Al-Shihabi</p>
-        <div class="social-ikoner" data-aos="fade-up" data-aos-delay="200">
+        <div class="social-ikoner">
             <a href="#"><img src="images/linkedin.png" alt="Linkedin" title="https://www.flaticon.com/free-icons/linkedin"></a>
             <a href="#"><img src="images/instagram.png" alt="instagram" title="https://www.flaticon.com/free-icons/instagram-logo"></a>
             <a href="#"><img src="images/dribble.png" alt="Dribbbel" title="https://www.flaticon.com/free-icons/dribble"></a>

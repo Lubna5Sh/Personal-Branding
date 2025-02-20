@@ -56,6 +56,7 @@ main{
 .social-ikoner-kont img{
     width: 80px;
     height: 80px;
+    transition: transform 0.3s;
 }
 
 .social-ikoner-kont img:hover{
@@ -71,6 +72,11 @@ main{
 #mail:hover{
     color: #DEFF67;
     font-weight: bold;
+}
+
+#kontakt-billede{
+    width: 50%;
+    height: auto;
 }
 
 /* Media query for mobile screens */
@@ -108,4 +114,7 @@ main{
         height: 60px;
     }
     
+    #kontakt-billede{
+        width: 100%;
+    }
 }

@@ -48,6 +48,10 @@ main{
     justify-content: center;
 }
 
+.styrker-tekst{
+    width: 75%;
+}
+
 .styrker-tekst h1{
     color:#F8F5EF;
     font-family: "Jomhuria", serif;
@@ -214,6 +218,7 @@ main{
 
 #fakta-billede{
     width: 45%;
+    margin-top: 100px;
 }
 
 /* Media query for mobile screens */
@@ -248,6 +253,10 @@ main{
     }
     
     #intro-billede{
+        width: 100%;
+    }
+
+    .styrker-tekst{
         width: 100%;
     }
 

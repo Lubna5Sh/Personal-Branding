@@ -3,7 +3,7 @@ body{
 }
 
 main{
-    padding: 50px 100px;
+    padding: 0px 100px;
     min-height: 100vh; /* Sørger for, at main fylder hele viewport-højden */
     display: flex;
     flex-direction: column;
@@ -90,7 +90,7 @@ main{
 /* Media query for mobile screens */
 @media only screen and (max-width: 768px) {
     main{
-        padding: 50px 70px;
+        padding: 0px 70px;
     }
     
     .overskrift{
@@ -101,7 +101,7 @@ main{
         max-width: 100%;
         height: auto;
         display: block;
-        margin-top:190px;
+        margin-top:0px;
     }
 
     .marquee-text {

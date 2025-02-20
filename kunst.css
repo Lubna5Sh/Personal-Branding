@@ -53,7 +53,7 @@ main{
     padding-left: 40px;
 }
 
-.tekst-2 h1{
+.tekst-2 h1, .vid-sec h1{
     color:#F8F5EF;
     font-family: "Jomhuria", serif;
     font-weight: 400;
@@ -167,6 +167,16 @@ main{
 
 .slider::-webkit-scrollbar {
     display: none;
+}
+
+.vid-sec h1{
+    text-align: center;
+}
+
+.vid-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Media query for mobile screens */
